@@ -20,3 +20,4 @@ import context  # Ensures paho is in PYTHONPATH
 import paho.mqtt.publish as publish
 
 publish.single("paho/test/single", "boo", hostname="mqtt.eclipseprojects.io")
+publish.single("paho/test/single", "boo", hostname="mqtt.eclipseprojects.io", client_id="12345", auth = {'username':"user", 'password':"pass"})
